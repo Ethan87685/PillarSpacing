@@ -1,0 +1,51 @@
+<Publish>
+	<!--Id must be set in order to update existed mod. it is not required for publishing mod for the first time-->
+	<ModId Value="162558" />
+	<!--Name of the mod to display to players-->
+	<DisplayName Value="Pillar Spacing" />
+	<!--Short description of the mod-->
+	<ShortDescription Value="Set pillar spacing for elevated roads, tracks and paths separately, from 40 m to 1000 m." />
+	<!--Long description of the mod. Single line or multi line. Supports minimal markdown subset-->
+	<LongDescription>
+Set the maximum distance between pillars on elevated roads, tracks and paths, each with its own setting. Built from scratch for game version 1.6, without Harmony patches.
+
+## Features
+
+* Separate pillar spacing for **roads** (including bridges built with roads and tram roads), **tracks** (train, tram, subway) and **paths** (pedestrian, bicycle).
+* Spacing from 40 m to 1000 m. Spacing above 200 m is supported: road segments are allowed to be longer automatically.
+* Settings apply immediately and are applied automatically every time a save is loaded. No need to toggle anything after restarting.
+* One-click restore to vanilla.
+* Interface in English and Simplified Chinese. "Auto" works with translation mods.
+
+## Not affected
+
+* Prefab bridges (cable-stayed, suspension, arch, grand bridge): their towers are placed proportionally along the bridge by the game, so there is no spacing to change.
+* Draw bridges, lift bridges, piers, quays and dams.
+
+## Notes
+
+* Only affects roads built after the change. Rebuild existing bridges to apply.
+* If a change does not seem to apply, reselect the road tool.
+* Do not use together with ConfigurableElevatedRoad or BridgePillarAdjuster: they change the same values.
+* Safe to remove: saves stay intact.
+
+	</LongDescription>
+	<!--Thumbnail-->
+	<Thumbnail Value="Properties/Thumbnail.png" />
+	<!--Screenshot, can be set multiple times-->
+	<Screenshot Value="Properties/Screenshot1.png" />
+	<!--Tag, can be set multiple times-->
+	<Tag Value="Code Mod" />
+	<!--Link to the forum post where the mod can be discussed-->
+	<ForumLink Value="" />
+	<!--Version of the mod-->
+	<ModVersion Value="1.0.0" />
+	<!--Recommended version of the base game to use the mod-->
+	<GameVersion Value="1.6.*" />
+	<!--Change log for new version. Single line or multi line. Supports minimal markdown subset-->
+	<ChangeLog>
+* First release.
+	</ChangeLog>
+	<!--External links. supported types are discord, github, youtube, twitch, x, paypal, patreon, buymeacoffee, kofi, crowdin, gitlab-->
+	<!--<ExternalLink Type="github" Url="" />-->
+</Publish>
